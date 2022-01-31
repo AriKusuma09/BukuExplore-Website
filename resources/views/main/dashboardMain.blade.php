@@ -12,7 +12,10 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/assets/js/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- Bootstrap core CSS -->
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,11 +35,11 @@
       }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
     <link href="/assets/css/dashboard.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assetes/css/dashboard.rtl.css">
+    <link rel="stylesheet" href="/assets/css/dashboard.rtl.css">
   </head>
   <body>
 
@@ -44,15 +47,8 @@
     @include('main.part.sidebar')
     @yield('dashboard-page')
 
+    <script src="/assets/js/dashboard.js"></script>
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-    <script src="/assets/js/dashboasrd.js"></script>
-
-    {{-- Sweeet Alert --}}
-    <script src="/assets/js/sweetalert2.all.min.js"></script>
 
     @if(session('success'))
     <script>
@@ -63,14 +59,11 @@
 			)
       </script>
 		@endif
-
-    {{-- Chart --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script>
-      
+    // GIGA - G4L
     </script>
 
-    
+
 
   </body>
 </html>
