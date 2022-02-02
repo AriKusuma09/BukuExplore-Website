@@ -1,8 +1,8 @@
 @extends('main.dashboardMain')
 
 @section('dashboard-page')
-    
-    
+
+
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2 title-dashboard">Dashboard</h1>
@@ -17,9 +17,9 @@
             </button>
         </div>
         </div>
+        <!-- Natsu Graph -->
+        <canvas id="ntx-graph" style="width:100vw;height:25rem;"></canvas>
 
-        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
-        
 
         <h3>Section title</h3>
         <div class="table-responsive">
@@ -154,8 +154,8 @@
     </div>
 
 
-  
 
 
-    
+
+
 @endsection

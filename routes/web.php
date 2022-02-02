@@ -67,7 +67,7 @@ Route::get('/cart', function () {
 
 
 // Dashboard
-
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 // Dashboard All Product
 Route::get('/dashboard/category/product-dashboard', function () {
     return view('dashboard.product-dashboard');
